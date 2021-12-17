@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" class="form">
+            <div class="actions">
+                <div class="wrapper">
+                    <label for="number-a" class="label">Number A</label>
+                    <input type="text" id="number-a" class="number" title="Enter number A" autocomplete="off"
+                        value="12345678">
+                </div>
+                <div class="wrapper">
+                    <label for="operation" class="label">Operation</label>
+                    <select id="operation" name="operation" class="select" title="Select the type of operation">
+                        <option value="+" selected>+</option>
+                        <option value="-">- </option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </div>
+                <div class="wrapper">
+                    <label for="number-b" class="label">Number B</label>
+                    <input type="text" id="number-b" class="number" title="Enter number B" autocomplete="off">
+                </div>
+            </div>
+            <div class="result-wrapper">
+                <span>Result</span>
+                <div id="result" class="result">0</div>
+            </div>
+            <button type="submit" class="button">Calculate</button>
+        </form>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
